@@ -19,7 +19,7 @@ from tqdm.auto import tqdm
 
 matplotlib.use("Agg")
 
-project_root = Path(os.environ.get("PROJECT_ROOT", "/staff-umbrella/Xeniumenhancer")).resolve()
+project_root = Path(os.environ.get("PROJECT_ROOT", "/Xeniumenhancer")).resolve()
 ann_dir = Path(os.environ.get("ANN_DIR", project_root / "AnnData")).resolve()
 save_dir = Path(os.environ.get("OUTPUT_DIR", project_root / "outputs" / "vae_eval")).resolve()
 save_dir.mkdir(parents=True, exist_ok=True)
