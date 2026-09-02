@@ -26,7 +26,7 @@ matplotlib.use("Agg")
 
 
 # Paths / I/O
-PROJECT_ROOT = Path(os.environ.get("PROJECT_ROOT", "/staff-umbrella/Xeniumenhancer")).resolve()
+PROJECT_ROOT = Path(os.environ.get("PROJECT_ROOT", "/Xeniumenhancer")).resolve()
 ANN_DIR = Path(os.environ.get("ANN_DIR", PROJECT_ROOT / "AnnData")).resolve()
 SAVE_DIR = Path(os.environ.get("OUTPUT_DIR", PROJECT_ROOT / "outputs")).resolve()
 SAVE_DIR.mkdir(parents=True, exist_ok=True)
